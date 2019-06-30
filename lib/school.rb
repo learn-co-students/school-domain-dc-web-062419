@@ -11,7 +11,6 @@ class School
 
 
     def add_student(name, grade)
-        # binding.pry
         if self.roster[grade] == nil
          self.roster[grade] = []
          self.roster[grade] << name
@@ -25,14 +24,8 @@ class School
     end
 
     def sort
-
         roster.each do |k, v|
             v.sort! 
         end
-        # roster.sort.map.to_h do |element| 
-        #     element
-        #     binding.pry
-        # end
-        # binding.pry
     end
 end
